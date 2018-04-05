@@ -254,7 +254,7 @@ compress_html:
   ignore:
     envs: development
 
-
+html_show_sourcelink: false
 # Defaults
 defaults:
   # _posts
