@@ -1,0 +1,321 @@
+---
+layout: page
+title: MAOI project
+permalink: /
+---
+
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <div class="block">
+          <h1 class="animated fadeInUp"><br> Multimodal Analysis of Opinions in Interactions</h1>
+          <p class="animated fadeInUp">We love the Web and the work we do. We work closely with our clients to deliver the best possible solutions for their needs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>WHAT IS MAOI?</h2>
+            <p>
+              Opinion mining is a progressing domain. A lot of efforts have been recently dedicated to the development of methods able to analyze opinion data available on the social Web. At the same time, companies that are developing companion robots and virtual vocal assistants (Siri, Google Now, Cortana, etc.) show a growing interest for the integration of the social component in the interaction. The development of social relationships between the agent and the user relies on socio-emotional interaction strategies requiring a deep understanding of the user. The proposed project tackles the latter issue: it is dedicated to the analysis of users’ preferences as expressed in users’ utterances in order to build social user profiles.
+            </p>
+            <a href="{{ site.baseurl }}/description" class="btn btn-view-works">More infos</a>
+          </div>
+          <!-- <p>
+            In order to better understand the role of users’ preferences in a robot companion application, let us consider the following scenario:
+          </p>
+          <blockquote>
+          <p>
+            You are at home with your companion robot and you want to listen to music. You have already discussed with the robot in previous interactions and during these interactions you have exchanged opinions about music. During this natural and informal conversation, the robot stores your preferences. According to this incremental user profile, the robot recommends you some music to listen to. According to the relevance of the recommendation, you can give an oral feedback to the robot allowing it to update your model of preferences.
+          </p>
+          </blockquote>
+          <p>
+            Motivated by this scenario, the MAOI proposal focuses on the analysis of the users’ expression of opinion in order to build an incremental user model. Indeed, the MAOI project aims to develop methods for the multimodal modeling and analysis of the users’ opinions in human-agent interactions. The multimodal aspects are handled with the joint use of linguistic and prosodic cues for opinion analysis. The first originality of the project is to focus on a specific opinion phenomenon: the modeling of the users’ expressions of preferences by selecting the expressions of opinions of which the source is the user and to identify the targets of the opinions. The second originality relies on the grounding of opinion detection methods in the dialogue context, this grounding being a big shortcoming of the rare opinion detection systems that are integrated in human-agent interaction. For example, the semantic modeling of the agent’s utterances and the topic structure of the interaction scenario are a very relevant source of information for the analysis of the users’ opinion and its target. The third originality is the use of hybrid methods that allow us to investigate the use of both complex knowledge-based linguistic features (in order to model high-level semantic relations contained in dialogue context) and the recent word embeddings features in machine learning methods. Concerning machine learning methods, we choose Conditional Random Fields (CRF) that do not require a big volume of annotated data, which facilitates the integration of linguistic expertise and the modeling of opinion dynamics. Besides, CRFs allow us to have an in-depth understanding of the learnt model and of the detection process.
+          </p> -->
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <img src="img/exp2.jpg" alt="Img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="latest-news">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>News</h2>
+            </div>
+        </div>
+        <div class="row">
+          {% for post in site.posts limit:3 %}
+          <div class="blog-post col-md-4 col-sm-6 col-xs-6">
+              <h4><a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a></h4>
+            <p class="post-date">{{ post.date | date_to_long_string }}</p>
+            <p>
+              {{ post.content | strip_html | truncatewords: 50 }}
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row">
+            <a href="{{ site.baseurl }}/blog" class="btn btn-view-works">See all our news</a>
+        </div>
+    </div>
+</section>
+
+<section id="people">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>People of the project</h2>
+      </div>
+    </div>
+    <div class="row">
+        <h3>Main contributors</h3>
+    </div>
+    <div class="people col-md-4 col-sm-6 col-xs-6">
+      <img class="people-photo wow zoomInDown" src="img/chloeclavel.jpg" alt="Chloé Clavel" style="visibility: visible; animation-name: zoomInDown;">
+      <h4 class="people-name wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Chloé Clavel</h4>
+      <span class="people-position wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Télécom ParisTech</span>
+      <div class="people-desc wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><p>Chloé Clavel is an associate professor in Affective Computing in the GRETA Team belonging to the MM (multimedia) group of the Signal and Image Processing Department of Telecom-ParisTech. Her research focuses on two issues: acoustic analysis of emotional speech and opinion mining through natural language processing. After her PhD, she worked in the laboratories of two big French companies that are Thales Research and Technology and EDF R&D where she developed her research around audio and text mining applications. At Telecom-ParisTech, she is currently working on interactions between humans and virtual agents, from user’s socio-emotional behavior analysis to socio-affective interaction strategies.</p>
+      </div>
+      <div class="employee-social wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+          <a href="https://twitter.com/angelcaf" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.linkedin.com/in/angelocafaro" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="people col-md-4 col-sm-6 col-xs-6">
+      <img class="people-photo wow zoomInDown" src="img/emilechapuis.jpeg" alt="Emile Chapuis" style="visibility: visible; animation-name: zoomInDown;">
+      <h4 class="people-name wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Emile Chapuis</h4>
+      <span class="people-position wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Télécom ParisTech</span>
+      <div class="people-desc wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><p>Johannes Wagner graduated as a Master of Science in Informatics and Multimedia from the University of Augsburg, Germany, in 2007. He is currently employed as a research assistant at the lab of Human Centered Multimedia (HCM) and has been working in several European projects including Humaine, Callas, Ilhaire and CEEDs. His main research focus is the integration of Social Signal Processing (SSP) in real-life applications. He is the founder of the Social Signal Interpretation
+(SSI) framework, a general framework for the integration of multiple sensors into multimedia applications.</p>
+      </div>
+    </div>
+    <div class="row">
+      <h3>Collaborators</h3>
+    </div>
+    <div class="people col-md-4 col-sm-6 col-xs-6">
+        <img class="people-photo wow zoomInDown" src="img/valentin.jpeg" alt="Valentin Barrière" style="visibility: visible; animation-name: zoomInDown;">
+        <h4 class="people-name wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Valentin barrière</h4>
+        <span class="people-position wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Télécom ParisTech</span>
+        <div class="people-desc wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><p>Valentin Barriere is a PhD student working in the S2A (Signal, Statistics and Learning) and GRETA teams of Telecom ParisTech since october 2015, under the supervision of Chloé Clavel and Slim Essid. he works on the detection and analysis of opinion in oral interactions. He uses probabilistic graphical models for opinion mining, using hybrid techniques recognizing linguistic patterns with Machine Learning methods in order to characterize an expression of opinion.</p>
+        </div>
+    </div>
+    <div class="people col-md-4 col-sm-6 col-xs-6">
+        <img class="people-photo wow zoomInDown" src="img/caroline.jpeg" alt="Caroline Langlet" style="visibility: visible; animation-name: zoomInDown;">
+        <h4 class="people-name wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Caroline Langlet</h4>
+        <span class="people-position wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Télécom ParisTech</span>
+        <div class="people-desc wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><p>Chloé Clavel is an associate professor in Affective Computing in the GRETA Team belonging to the MM (multimedia) group of the Signal and Image Processing Department of Telecom-ParisTech. Her research focuses on two issues: acoustic analysis of emotional speech and opinion mining through natural language processing. After her PhD, she worked in the laboratories of two big French companies that are Thales Research and Technology and EDF R&D where she developed her research around audio and text mining applications. At Telecom-ParisTech, she is currently working on interactions between humans and virtual agents, from user’s socio-emotional behavior analysis to socio-affective interaction strategies.</p>
+        </div>
+    </div>
+    <div class="people col-md-4 col-sm-6 col-xs-6">
+        <img class="people-photo wow zoomInDown" src="img/slim.png" alt="Slim Essid" style="visibility: visible; animation-name: zoomInDown;">
+        <h4 class="people-name wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Slim Essid</h4>
+        <span class="people-position wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Télécom ParisTech</span>
+        <div class="people-desc wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><p>Slim Essid is Full Professor of Télécom ParisTech and the coordinator of the Audio Data Analysis and Signal Processing team. He received the state engineering degree from the École Nationale d’Ingénieurs de Tunis in 2001; the M.Sc. (D.E.A.) degree in digital communication systems from the École Nationale Supérieure des Télécommunications, Paris, France, in 2002; the Ph.D. degree from the Université Pierre et Marie Curie (UPMC) in 2005 and the habilitation (HDR) degree from UPMC in 2015. He has been involved in various French and European research projects among which are Quaero, EU Networks of Excellence FP6-Kspace and FP7-3DLife, and collaborative projects FP7-REVERIE and FP7-LASIE. On a regular basis he serves as a reviewer for various machine learning, signal processing, audio and multimedia conferences and journals, for instance various IEEE transactions, and as an expert for research funding agencies.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section id="latest-news">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Partners</h2>
+            </div>
+        </div>
+        <div class="row">
+          <!-- {% for post in site.posts limit:3 %}
+          <div class="blog-post col-md-4 col-sm-6 col-xs-6">
+              <h4><a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a></h4>
+            <p class="post-date">{{ post.date | date_to_long_string }}</p>
+            <p>
+              {{ post.content | strip_html | truncatewords: 50 }}
+            </p>
+          </div>
+          {% endfor %} -->
+        </div>
+    </div>
+</section>
+
+
+
+<!-- <section id="people">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+            <h2>Chloé Clavel</h2>
+          <p>Chloé Clavel is an associate professor in Affective Computing in the GRETA Team belonging to the MM (multimedia) group of the Signal and Image Processing Department of Telecom-ParisTech. Her research focuses on two issues: acoustic analysis of emotional speech and opinion mining through natural language processing. After her PhD, she worked in the laboratories of two big French companies that are Thales Research and Technology and EDF R&D where she developed her research around audio and text mining applications. At Telecom-ParisTech, she is currently working on interactions between humans and virtual agents, from user’s socio-emotional behavior analysis to socio-affective interaction strategies.</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="/img/chloeclavel.jpg" alt="Img">
+        </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <h2>WE BELIEVE IN GREAT IDEAS</h2>
+      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <a href="#" class="btn btn-view-works">View Works</a>
+    </div>
+  </div>
+</div>
+</section> -->
+
+<!-- Service Start -->
+<!-- <section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="icon ion-coffee"></i>
+          <h4>Branding</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-compass"></i>
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-image"></i>
+          <h4>App Design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-bug"></i>
+          <h4>Start Up</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-headphone"></i>
+          <h4>Logo Design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-leaf"></i>
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-planet"></i>
+          <h4>Brand Identity</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-earth"></i>
+          <h4>Brand Identity</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- Call to action Start -->
+<!-- <section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- Content Start -->
+<!-- <section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Fun Facts About Us</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {% if site.data.funfacts.size > 0 %}
+        <div class="block">
+          {% for ff in site.data.funfacts %}
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="{{ ff.icon }}"></i>
+                <h4 class="counter">{{ ff.counter }}</h4>
+                <span>{{ ff.text }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      <div class="col-md-6">
+        {% if site.data.testimonials.size > 0 %}
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            {% for tm in site.data.testimonials %}
+            <div>
+                <img src="img/cotation.png" alt="IMG">
+                <p>{{ tm.testimonial }}</p>
+                <div class="user">
+                  <img src="{{ tm.image }}" alt="Pepole">
+                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section> -->
